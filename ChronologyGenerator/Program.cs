@@ -20,13 +20,11 @@ namespace ChronologyGenerator
 
         static void Main(string[] args)
         {
-            var result = @"C:\tmp\output.pdf";
-            using (var fs = new FileStream(result, FileMode.Create, FileAccess.Write, FileShare.None))
+            var resultFile = args.FirstOrDefault() ?? @"C:\tmp\output.pdf";
+            using (var fs = new FileStream(resultFile, FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 var doc = new Document(PageSize.A4, 0, 0, 0, 0);
-
                 var writer = PdfWriter.GetInstance(doc, fs);
-
                 doc.Open();
 
                 var questionsBatches = GetQuestions().Split(CARDS_BY_COLUMN * CARDS_BY_ROWS);
