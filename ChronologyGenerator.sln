@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChronologyGenerator", "ChronologyGenerator\ChronologyGenerator.csproj", "{C7FCA84E-CE9B-4778-8AC5-29B1233F5E77}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{550A82AD-4FC3-4AD7-8529-9A7A16F5942C}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\thumbnail-template.svg = Resources\thumbnail-template.svg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
