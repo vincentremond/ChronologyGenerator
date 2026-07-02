@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Resources/">
+    <File Path="Resources/thumbnail-template.svg" />
+  </Folder>
+  <Project Path="ChronologyGenerator/ChronologyGenerator.csproj" />
+</Solution>
